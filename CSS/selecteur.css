@@ -1,0 +1,65 @@
+body{
+    /*taille de police: 25 pixels*/
+    font-size: 25px;
+}
+
+h1{
+    background-color: darkblue;
+    color: aliceblue;
+}
+
+/*tous les <p> à l'intérieur de la balise <section>*/
+section p{
+    color: red;
+}
+
+/*premier <p>*/
+section p:first-child {
+    color: blue;
+}
+
+/*dernier <p>*/
+section p:last-child {
+    color: blueviolet;
+}
+
+/*les <p> pairs*/
+section p:nth-child(even){
+    color: aqua;
+}
+
+/*les <p> impairs*/
+section p:nth-child(odd){
+    color: brown;
+}
+
+/*les <p> 3 et 10*/
+section p:nth-child(3), section p:nth-child(10){
+    color: orange;
+}
+
+/*CLASS donc avant son nom je mets un . */
+.zone1{
+    color: #10970e;
+}
+
+.zone2{
+    color: #008080;
+}
+
+.lime{
+    color: #00ff00;
+}
+
+/*ID donc avant son nom je mets un # */
+#zone3{
+    background-color: hotpink;
+}
+
+.zone4{
+    color: pink;
+}
+
+.zone5{
+    background-color: palevioletred;
+}
