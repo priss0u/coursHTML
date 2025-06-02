@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- je déclare mon formulaire avec la balise form -->
+    <form>
+        <!-- Deux manières de déclarer le label -->
+        <label for="pseudo">Pseudo:
+            <!-- input dans label -->
+            <input type="text" id="pseudo" name="pseudo" placeholder="Martine" required />
+            <!-- 
+                l'id combiné à for permet de lier le label à l'input
+                type précise le type de donnée récupérée,
+                name sera utilisé en php pour récupérer la donnée, 
+                le placeholder contient le texte qui apparaît dans l'input
+                required précise au navigateur que le champs est à renseigner obligatoirement
+            -->
+        </label>
+        <label for="password">Mot de passe:<span title="le mot de passe peut contenir...">*</span></label>
+        <input type="password" id="password" name="password" placeholder="Mot de passe" required/>
+        
+        <!-- email -->
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" value="martine@gmail.com"/>
+    
+        <!-- fichier -->
+        <label for="photo">Photo</label>
+        <input type="file" id="photo" name="photo"/>
+
+        <!-- cases à cocher checkbox-->
+        <!-- plusieurs choix -->
+        <legende>Quelle destination choisissez-vous?</legende>
+        <input type="checkbox" id="q1" name="q1"/>
+        <label for="q1">Portugal</label>
+        <input type="checkbox" id="q2" name="q2" checked>
+        <label for="q2">Tunisie</label>
+        <input type="checkbox" id="q3" name="q3">
+        <label for="q3">Espagne</label>
+
+        <!-- cases à cocher radio-->
+        <!-- un choix -->
+        <legende>Qui seront vos accompagnateurs?</legende>
+
+        <label for="family">En famille</label>
+        <input type="radio" id="family" name="family">
+        
+        <label for="friends">Entre amis</label>
+        <input type="radio" id="friends" name="friends" checked>
+
+        <!-- zone de texte -->
+        <label for="commentaires">Commentaires</label>
+        <textarea name="commentaires" id="commentaires" cols="80" rows="8"></textarea>
+        <!-- rows=nombre de lignes - cols=nombre de colonnes/caractères -->
+
+        <!-- bouton envoi du formulaire -->
+        <input type="submit" name="inscription" value="Envoyer">
+
+        <!-- bouton pour vider le formulaire -->
+        <input type="reset" name="annuler" value="Annuler">
+    </form>
+    <a href="/" class="myBtn">Menu</a>
+</body>
+</html>

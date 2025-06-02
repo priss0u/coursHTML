@@ -1,0 +1,36 @@
+body{
+    margin: 0 auto;
+    background-color: palevioletred;
+}
+
+.boite{
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+    background: center url(../img/image.png);
+    background-size: 100%;
+    /* 
+    background-image: url(https://monImage.fr);
+    */
+    margin: 30px;
+    padding: 15px;
+    border: 5px double rgb(2, 0, 0);
+    float: left;
+}
+
+.boite:hover {
+    height: 500px;
+    width: 500px;
+    filter: grayscale(100%);
+}
+
+a{
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 20px;
+    text-decoration: none;
+}

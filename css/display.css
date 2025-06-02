@@ -1,0 +1,29 @@
+h1, h2, div, a, p, span{
+    background-color: palevioletred;
+    border: 1px solid orchid;
+}
+
+a{
+    background-color: palevioletred;
+    border: 1px solid orchid;
+}
+
+.block{
+    display: block;
+}
+
+.inline{
+    display: inline;
+}
+
+.myBtn{
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 20px;
+    text-decoration: none;
+}
+
